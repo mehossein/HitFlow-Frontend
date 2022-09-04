@@ -21,7 +21,11 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@core/*": ["project/src/app/core/*"],
+    }
+    
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
