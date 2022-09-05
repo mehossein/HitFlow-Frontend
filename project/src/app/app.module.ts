@@ -6,31 +6,29 @@ import { CoreModule } from '@core/core.module';
 import { LoadingInterceptor } from '@core/interceptor';
 import { LoadingService } from '@core/service';
 import { ToastrModule } from 'ngx-toastr';
-
+import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ToastrModule.forRoot(),
-    BrowserAnimationsModule
+
+    CoreModule.forRoot({
+      environment: environment,
+    }),
   ],
   providers: [
     LoadingService,
-    CoreModule,
-    
     {
       provide: HTTP_INTERCEPTORS,
       useClass: LoadingInterceptor,
       multi: true,
     },
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
