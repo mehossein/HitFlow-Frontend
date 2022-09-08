@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'project/src/environments/environment';
 
 @Component({
-  selector: 'navbar',
+  selector: 'hf-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
+  appName?: string = environment.applicationName;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
