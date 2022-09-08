@@ -3,10 +3,17 @@
 @import url("tailwindcss/utilities");
 
 // regular style toast
-@import '~ngx-toastr/toastr';
-@import './app//shared/styles/shared.scss';
+@import "~ngx-toastr/toastr";
+@import "./app//shared/styles/shared.scss";
+:root {
+  --bg-color: #f7f7fa;
+  --bg-dark-color: #1c1c28;
+}
 
-
+body,
+html {
+  background-color: var(--bg-color);
+}
 .ff-2p {
-    font-family: 'Press Start 2P'!important;
+  font-family: "Press Start 2P" !important;
 }
