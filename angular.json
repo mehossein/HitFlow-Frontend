@@ -10,9 +10,9 @@
           "style": "scss"
         }
       },
-      "root": "",
-      "sourceRoot": "project",
-      "prefix": "app",
+      "root": "project",
+      "sourceRoot": "project/src",
+      "prefix": "hf",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

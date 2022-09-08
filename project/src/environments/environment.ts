@@ -2,7 +2,7 @@ import { Environment } from '@core/interface/env.interface';
 
 export const environment: Environment = {
   production: false,
-  applicationName: 'HitFlow',
+  applicationName: 'HitFLow',
   baseUrl: '/api/',
 };
 
