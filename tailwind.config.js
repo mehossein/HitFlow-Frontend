@@ -5,15 +5,19 @@ module.exports = {
     extend: {},
     colors: {
       main: "#ffffff",
-      nav:'#28293D',
-      primary:'#3E7BFA',
-      'primary-hover':'#6698ff',
-      'primary-focus':'#3568df'
+      nav: "#28293D",
+      primary: "#3E7BFA",
+      "primary-hover": "#6698ff",
+      "primary-focus": "#3568df",
     },
     fontFamily: {
       brand: ["Russo One", "sans-serif"],
-      body: 'Poppins',
+      body: "Poppins",
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+
+  daisyui: {
+    themes: ["light"],
+  },
 };
