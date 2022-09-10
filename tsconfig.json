@@ -23,8 +23,8 @@
       "dom"
     ],
     "paths": {
+      "@shared/*": ["project/src/app/shared/*"], 
       "@core/*": ["project/src/app/core/*"],
-      "@shared/*": ["project/src/app/shared/*"],
     }
     
   },
