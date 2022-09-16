@@ -1,0 +1,10 @@
+<div
+  class="bg-main"
+  style.padding="{{ padding }}px"
+  style.margin="{{ margin }}px"
+  style.border-radius="{{ borderRadius }}px"
+  [style.box-shadow]="onChangeShadow(shadow)"
+  style.backgound-color="{{ color }}"
+>
+  <ng-content></ng-content>
+</div>
