@@ -4,12 +4,18 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      background: '#f7f7fa',
+      background: "#f7f7fa",
       main: "#ffffff",
       nav: "#28293D",
       primary: "#3E7BFA",
       "primary-hover": "#6698ff",
       "primary-focus": "#3568df",
+      destructive: "#FF3B3B",
+      "destructive-hover": "#FF5C5C",
+      "destructive-focus": "#E53535",
+      positive: "#06C270",
+      "positive-hover": "#39D98A",
+      "positive-focus": "#05A660",
     },
     fontFamily: {
       brand: ["Russo One", "sans-serif"],
