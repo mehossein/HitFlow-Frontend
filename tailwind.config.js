@@ -16,13 +16,23 @@ module.exports = {
       positive: "#06C270",
       "positive-hover": "#39D98A",
       "positive-focus": "#05A660",
+      gray: {
+        '50': '#f9fafb',
+        '100': '#f3f4f6',
+        '200': '#e5e7eb',
+        '300': '#d1d5db',
+        '400': '#9ca3af',
+        '500': '#6b7280',
+        '600': '#4b5563',
+        '700': '#374151',
+        '800': '#1f2937',
+        '900': '#111827',
+      }
+      
     },
     fontFamily: {
       brand: ["Russo One", "sans-serif"],
       body: "Poppins",
-    },
-    boxShadow: {
-      nav: "0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);",
     },
   },
   plugins: [require("daisyui")],
