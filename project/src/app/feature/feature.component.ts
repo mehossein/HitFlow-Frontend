@@ -2,12 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'hf-feature',
-  template: `<router-outlet></router-outlet>`,
-
+  templateUrl: './feature.component.html',
 })
 export class FeatureComponent {
-
-  constructor() { }
-
-
+  constructor() {}
 }

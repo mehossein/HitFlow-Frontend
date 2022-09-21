@@ -4,16 +4,17 @@ import { CommonModule } from '@angular/common';
 import { FeatureRoutingModule } from './feature-routing.module';
 import { FeatureComponent } from './feature.component';
 import { LandingPageComponent } from './landing-page/components/landing-page.component';
+import { SharedModule } from '@shared/shared.module';
 
 
 @NgModule({
   declarations: [
     FeatureComponent,
-    LandingPageComponent
   ],
   imports: [
     CommonModule,
-    FeatureRoutingModule
+    FeatureRoutingModule,
+    SharedModule
   ]
 })
 export class FeatureModule { }
